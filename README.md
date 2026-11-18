@@ -2,23 +2,9 @@
 
 I got tired of running smartctl on every drive one at a time and digging through the output, so I wrote this. It's one Python script that shows SMART health, temps, reads and writes and disk space for every drive in the machine on one screen. There's also a live mode if you want to leave it running while you copy stuff or game.
 
-```
-  Drive health  2026-11-18 13:19:47  ·  7 drives  ·  ✓ all healthy  ·  hottest games0 41°C
+![drivehealth on my machine](screenshot.png)
 
-▌ HEALTH
-  DRIVE     MODEL                HEALTH  WEAR  SPARE  MEDIA ERR  ERR LOG  UNSAFE  POWER-ON  CYCLES
-  root      Samsung 990 PRO 4TB  ✓ OK      0%   100%          0        0      65   2,872 h     916
-  home      WD Black SN850X 4TB  ✓ OK      0%   100%          0        0      66   8,710 h     990
-  games0    WD Black SN850X 4TB  ✓ OK      0%   100%          0        0      61   8,378 h     876
-  games1    Samsung 990 PRO 2TB  ✓ OK      0%   100%          0        0     178     422 h   2,324
-  games2    Samsung 980 PRO 2TB  ✓ OK      1%   100%          0        0     188     584 h   1,814
-  storage0  WD Black SN770 1TB   ✓ OK      0%   100%          0        0      41   2,078 h     354
-  storage1  Samsung 860 EVO 2TB  ✓ OK      2%   100%          0        0     551  30,881 h   2,560
-```
-
-That's just the top part. Under it you get thermals, reads and writes, and filesystem usage. In a terminal it's all color coded.
-
-I run it on CachyOS with six NVMe drives and one SATA SSD. It should work on pretty much any Linux box with smartmontools. I don't own any hard drives or SAS gear though, so the code for those has only been tested against fake smartctl output.
+I run it on CachyOS with six NVMe drives and one SATA SSD. It should work on pretty much any Linux box with smartmontools.
 
 ## What you get
 
