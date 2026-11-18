@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+
+# old versions and audit notes, kept on my PC only
+local/
